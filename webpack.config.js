@@ -1,3 +1,5 @@
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = {
     entry: {
         helloWorld: [
@@ -15,7 +17,7 @@ module.exports = {
           test: /\.js$/,
           loader: 'react-hot!babel',
           exclude: /node_modules/
-        }/*, {
+        }, {
           test: /\.css$/,
           loaders: ['style', 'css'],
           exclude: /node_modules/
