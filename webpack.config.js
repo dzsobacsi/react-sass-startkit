@@ -18,8 +18,8 @@ module.exports = {
           loader: 'react-hot!babel',
           exclude: /node_modules/
         }, {
-          test: /\.css$/,
-          loader: ExtractTextPlugin.extract('style', 'css')
+          test: /\.sass$/,
+          loader: ExtractTextPlugin.extract('style', 'css!sass')
         }
       ]
     },

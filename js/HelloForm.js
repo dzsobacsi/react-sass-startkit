@@ -1,4 +1,4 @@
-require('../css/main.css');
+require('../css/main.sass');
 import HelloSayer from './HelloSayer';
 import React from 'react';
 
