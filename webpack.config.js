@@ -19,14 +19,11 @@ module.exports = {
           exclude: /node_modules/
         }, {
           test: /\.css$/,
-          loaders: ['style', 'css'],
-          exclude: /node_modules/
-        }/*,
-        {
-          test: /\.sass$/,
-          loaders: ['style', 'css', 'sass'],
-          exclude: /node_modules/
-        }*/
+          loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+        }
       ]
-    }
+    },
+    plugins: [
+        new ExtractTextPlugin('public/style.css')
+    ]
 };
